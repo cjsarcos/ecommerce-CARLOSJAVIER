@@ -1,0 +1,30 @@
+.logo img {
+  display: flex;
+  width: 150px;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar a {
+  position: relative;
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  margin-left: 40px;
+  text-decoration: none;
+}
+
+.navbar a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #222222;
+  transition: 0.3s;
+}
+
+.navbar a:hover::before {
+  width: 100%;
+}
